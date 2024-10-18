@@ -1,7 +1,5 @@
 package com.spacrod.ejercicios.ejerciciodos;
 
-import com.spacrod.ejercicios.ejerciciouno.CorredorHilo;
-
 public class SincronizacionHilos {
     public static void main(String[] args) {
         try{
