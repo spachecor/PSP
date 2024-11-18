@@ -1,0 +1,16 @@
+Netcat es más potente que telnet.
+
+Levantar un servidor:
+nc -l 127.0.0.1 -p 44446 (nc -l <dominio-ip> -p <puerto>)(la -p es opcional)
+nc -k -l -p 8080 (nc -k -l -p 8080)(se pueden conectar varios, matiene el servidor en ejecucion)
+Conectar un cliente:
+nc 127.0.0.1 44446 (nc <dominio-ip> <puerto>)
+
+Hacer un barrido:
+nc -zv 192.168.12.102 8000-8009
+
+Ver quien está conectado a tu servidor:
+netstat -an | grep 8006 (netstat -an | grep <puerto>)
+
+Mapeo con nmap
+nmap -p 12340-12345 192.168.11.37 (nmap -p <rango-puertos> <dominio-ip>)(sirve para mapear, hay que descargar nmap)

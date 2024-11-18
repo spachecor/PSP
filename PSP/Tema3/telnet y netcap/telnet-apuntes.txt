@@ -1,0 +1,3 @@
+telnet viene en windows. En características de windows se puede activar y luego usarse. Para usarse:
+telnet <nombre-dominio o dominio-ip> <puerto>
+telnet 127.0.0.1 44444

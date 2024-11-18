@@ -7,8 +7,8 @@ import java.net.Socket;
 
 public class Client {
     public static void main(String[] args) {
-        String serverAddress = "127.0.0.1"; // Dirección del servidor
-        int port = 44444; // Puerto del servidor
+        String serverAddress = "192.168.12.102"; // Dirección del servidor
+        int port = 8080; // Puerto del servidor
         String filePath = "src/main/resources/video/video.mp4"; // Ruta del archivo a enviar
 
         try (Socket socket = new Socket(serverAddress, port);
