@@ -8,7 +8,7 @@
 
 <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.spacrod.servidorchat.controllers.ConfiguracionComunicacionController">
    <children>
-      <HBox alignment="CENTER" prefHeight="300.0" prefWidth="400.0">
+      <HBox alignment="CENTER" prefHeight="200.0" prefWidth="400.0">
          <children>
             <ImageView fitHeight="100.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
                <image>
@@ -28,10 +28,45 @@
                         <Insets bottom="10.0" />
                      </VBox.margin>
                   </Label>
-                  <TextField promptText="Puerto" />
+                  <TextField promptText="Ej: 44444" />
                </children>
             </VBox>
-         </children></HBox>
-      <HBox prefHeight="100.0" prefWidth="400.0" />
+         </children>
+         <padding>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+         </padding></HBox>
+      <VBox prefHeight="200.0" prefWidth="100.0">
+         <children>
+            <VBox alignment="CENTER" prefHeight="50.0" prefWidth="100.0">
+               <children>
+                  <Label textFill="#a40000">
+                     <font>
+                        <Font name="Times New Roman Bold" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+            <HBox alignment="CENTER" prefHeight="150.0" prefWidth="400.0">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#onClickButtonAceptar" text="Aceptar">
+                     <HBox.margin>
+                        <Insets right="50.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="Times New Roman Bold" size="14.0" />
+                     </font>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#onClickButtonCancelar" text="Cancelar">
+                     <HBox.margin>
+                        <Insets left="50.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="Times New Roman Bold" size="14.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
    </children>
 </VBox>

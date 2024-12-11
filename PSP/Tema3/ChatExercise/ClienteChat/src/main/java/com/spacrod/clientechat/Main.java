@@ -9,7 +9,12 @@ import java.io.IOException;
 public class Main extends Application {
     @Override
     public void start(Stage stage) throws IOException {
-        FXService.loadNewWindow(stage, FXService.MAIN_VIEW, FXService.MAIN_TITLE, FXService.MAIN_SIZES);
+        FXService.loadNewWindow(
+                stage,
+                FXService.CONFIGURACION_COMUNICACION_VIEW,
+                FXService.CONFIGURACION_COMUNICACION_TITLE,
+                FXService.CONFIGURACION_COMUNICACION_SIZES
+        );
     }
 
     public static void main(String[] args) {

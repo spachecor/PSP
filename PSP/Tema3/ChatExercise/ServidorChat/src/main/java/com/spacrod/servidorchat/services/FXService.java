@@ -1,7 +1,9 @@
 package com.spacrod.servidorchat.services;
 
 import com.spacrod.servidorchat.Main;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
+import javafx.scene.Node;
 import javafx.scene.Scene;
 import javafx.scene.image.Image;
 import javafx.stage.Stage;
@@ -12,7 +14,7 @@ import java.util.Objects;
 public class FXService {
     public static final String CONFIGURACION_COMUNICACION_VIEW = "configuracion-comunicacion.fxml";
     public static final String CONFIGURACION_COMUNICACION_TITLE = "Configuraciones de la comunicacion";
-    public static final Integer[] CONFIGURACION_COMUNICACION_SIZES = new Integer[]{400, 200};
+    public static final Integer[] CONFIGURACION_COMUNICACION_SIZES = new Integer[]{600, 400};
     public static final String MAIN_VIEW = "main-view.fxml";
     public static final String MAIN_TITLE = "Servidor Chat";
     public static final Integer[] MAIN_SIZES = new Integer[]{480, 640};
@@ -23,5 +25,9 @@ public class FXService {
         stage.setTitle(title);
         stage.setScene(scene);
         stage.show();
+    }
+    public static void closeWindow(ActionEvent actionEvent) {
+        Stage currentStage = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
+        currentStage.close();
     }
 }
