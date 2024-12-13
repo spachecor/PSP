@@ -25,7 +25,7 @@
          </children></HBox>
       <HBox alignment="CENTER" prefHeight="50.0" prefWidth="200.0">
          <children>
-            <TextField prefWidth="355.0" />
+            <TextField prefWidth="355.0" promptText="Ej: Hola compañero!" />
             <Button mnemonicParsing="false" text="Enviar">
                <font>
                   <Font name="Times New Roman" size="12.0" />

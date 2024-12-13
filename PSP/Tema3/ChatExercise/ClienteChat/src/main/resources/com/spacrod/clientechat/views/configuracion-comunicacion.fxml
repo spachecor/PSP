@@ -6,7 +6,7 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1">
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.spacrod.clientechat.controllers.ConfiguracionComunicacionController">
    <children>
       <HBox alignment="CENTER" prefHeight="325.0" prefWidth="200.0">
          <children>
@@ -33,7 +33,7 @@
                         </HBox>
                         <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="250.0">
                            <children>
-                              <TextField prefWidth="200.0">
+                              <TextField prefWidth="200.0" promptText="Ej: 127.0.0.1">
                                  <font>
                                     <Font name="Times New Roman" size="13.0" />
                                  </font>
@@ -61,7 +61,7 @@
                         </HBox>
                         <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="250.0">
                            <children>
-                              <TextField prefWidth="200.0">
+                              <TextField prefWidth="200.0" promptText="Ej: 10101">
                                  <font>
                                     <Font name="Times New Roman" size="13.0" />
                                  </font>
@@ -89,7 +89,7 @@
                         </HBox>
                         <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="250.0">
                            <children>
-                              <TextField prefWidth="200.0">
+                              <TextField prefWidth="200.0" promptText="Ej: Juan">
                                  <font>
                                     <Font name="Times New Roman" size="13.0" />
                                  </font>
@@ -110,7 +110,7 @@
       </HBox>
       <HBox alignment="CENTER_RIGHT" prefHeight="75.0" prefWidth="200.0">
          <children>
-            <Button mnemonicParsing="false" text="Aceptar">
+            <Button mnemonicParsing="false" onAction="#onClickButtonAceptar" text="Aceptar">
                <font>
                   <Font name="Times New Roman Bold" size="14.0" />
                </font>
@@ -118,7 +118,7 @@
                   <Insets right="20.0" />
                </HBox.margin>
             </Button>
-            <Button mnemonicParsing="false" text="Cancelar">
+            <Button mnemonicParsing="false" onAction="#onClickButtonCancelar" text="Cancelar">
                <font>
                   <Font name="Times New Roman Bold" size="14.0" />
                </font>

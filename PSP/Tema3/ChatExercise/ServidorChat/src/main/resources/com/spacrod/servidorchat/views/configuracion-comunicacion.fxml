@@ -28,7 +28,7 @@
                         <Insets bottom="10.0" />
                      </VBox.margin>
                   </Label>
-                  <TextField promptText="Ej: 44444" />
+                  <TextField fx:id="textFieldPort" promptText="Ej: 10101" />
                </children>
             </VBox>
          </children>
@@ -39,7 +39,7 @@
          <children>
             <VBox alignment="CENTER" prefHeight="50.0" prefWidth="100.0">
                <children>
-                  <Label textFill="#a40000">
+                  <Label fx:id="labelError" textFill="#a40000">
                      <font>
                         <Font name="Times New Roman Bold" size="14.0" />
                      </font>
