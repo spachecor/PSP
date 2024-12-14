@@ -26,7 +26,7 @@ public class MainController {
      * logs de manera estática
      * @param log El nuevo mensaje del log
      */
-    public static void logMessage(String log){
+    public static synchronized void logMessage(String log){
         if(MainController.instance != null){
             instance.addNewLog(log);
         }

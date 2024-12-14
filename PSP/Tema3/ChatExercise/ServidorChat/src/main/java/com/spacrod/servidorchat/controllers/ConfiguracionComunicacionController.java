@@ -22,11 +22,11 @@ public class ConfiguracionComunicacionController {
                 contenidoTextFieldPort != null
                 && !contenidoTextFieldPort.isEmpty()
                 && containsOnlyNumbers(contenidoTextFieldPort)
-                && Integer.parseInt(contenidoTextFieldPort) > 10000 && Integer.parseInt(contenidoTextFieldPort) < 99999
+                && Integer.parseInt(contenidoTextFieldPort) >= 10000 && Integer.parseInt(contenidoTextFieldPort) <= 99999
         ){
             try{
+                new ServerHandler(Integer.parseInt(contenidoTextFieldPort));
                 FXService.loadNewWindow(new Stage(), FXService.MAIN_VIEW, FXService.MAIN_TITLE, FXService.MAIN_SIZES);
-                ServerHandler serverHandler = new ServerHandler(Integer.parseInt(contenidoTextFieldPort));
                 MainController.logMessage("Inicializando servidor... [ok]");
             }catch (IOException ioe) {
                 labelError.setText(ioe.getMessage());
@@ -36,7 +36,7 @@ public class ConfiguracionComunicacionController {
                 FXService.closeWindow(actionEvent);
             }
         }else{
-            labelError.setText("Por favor ingrese un valor valido");
+            labelError.setText("Por favor ingrese un valor valido.(10000-99999)");
         }
     }
     @FXML

@@ -1,7 +1,5 @@
 package com.spacrod.servidorchat.server;
 
-import com.spacrod.servidorchat.client.ClientThread;
-
 import java.io.IOException;
 import java.net.ServerSocket;
 import java.net.Socket;
@@ -12,7 +10,7 @@ public class ServerHandler {
     private Integer port;
     private ServerSocket serverSocket;
     static List<Socket> clients;
-    public ServerHandler(Integer port) throws IOException {
+    public ServerHandler(Integer port) throws Exception {
         ServerHandler.clients = new ArrayList<>();
         if(this.connectToPort(port)){
             this.port = port;
@@ -22,7 +20,7 @@ public class ServerHandler {
             }catch (RuntimeException e){
                 throw new IOException("La conexión ha sufrido un fallo");
             }
-        }
+        }else throw new Exception("Imposible conectar con el puerto " + port+". Proporcione otro puerto.");
     }
     private boolean connectToPort(Integer port){
         try{
@@ -30,19 +28,6 @@ public class ServerHandler {
             return true;
         }catch(IOException e){
             return false;
-        }
-    }
-
-    /**
-     * Método que gestiona la aceptación de las conexiones, creando los diferentes hilos para los clientes
-     * @throws IOException Saltará una excepción si ocurre un fallo en la conexión
-     */
-    private void acceptRequest() throws IOException {
-        while (true) {
-            Socket socket = this.serverSocket.accept();
-            ServerHandler.clients.add(socket);
-            Thread thread = new Thread(new ClientThread(socket));
-            thread.start();
         }
     }
     public Integer getPort() {

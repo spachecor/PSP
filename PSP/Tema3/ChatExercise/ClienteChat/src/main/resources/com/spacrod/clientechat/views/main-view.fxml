@@ -10,7 +10,7 @@
     <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
   </padding>
    <children>
-      <TextArea editable="false" prefHeight="500.0" style="-fx-background-radius: 10; -fx-border-radius: 10; -fx-border-color: grey; -fx-border-width: 1; -fx-background-color: white;" />
+      <TextArea fx:id="textAreaLog" editable="false" prefHeight="500.0" style="-fx-background-radius: 10; -fx-border-radius: 10; -fx-border-color: grey; -fx-border-width: 1; -fx-background-color: white;" />
       <HBox alignment="CENTER" prefHeight="50.0" prefWidth="200.0">
          <children>
             <Label text="Destinatario:">
