@@ -5,47 +5,39 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="eba5f3ee-159c-4b14-8bb9-101e547ab156" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/spacrod/clientechat/client/ClientThread.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/spacrod/clientechat/client/MessageOption.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../ChatExerciseConsolaComandos/ClienteConsolaChat/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../ChatExerciseConsolaComandos/ClienteConsolaChat/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../ChatExerciseConsolaComandos/ClienteConsolaChat/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../ChatExerciseConsolaComandos/ClienteConsolaChat/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../ChatExerciseConsolaComandos/ClienteConsolaChat/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../ChatExerciseConsolaComandos/ClienteConsolaChat/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../ChatExerciseConsolaComandos/ClienteConsolaChat/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../ChatExerciseConsolaComandos/ClienteConsolaChat/src/main/java/com/spachecor/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../ChatExerciseConsolaComandos/ClienteConsolaChat/src/main/java/com/spachecor/client/ClientHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../ChatExerciseConsolaComandos/ClienteConsolaChat/src/main/java/com/spachecor/client/ClientThread.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../ChatExerciseConsolaComandos/ClienteConsolaChat/src/main/java/com/spachecor/client/MessageOption.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../ChatExerciseConsolaComandos/ClienteConsolaChat/src/main/java/com/spachecor/client/RequestOption.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../ChatExerciseConsolaComandos/ServidorConsolaChat/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../ChatExerciseConsolaComandos/ServidorConsolaChat/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../ChatExerciseConsolaComandos/ServidorConsolaChat/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../ChatExerciseConsolaComandos/ServidorConsolaChat/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../ChatExerciseConsolaComandos/ServidorConsolaChat/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../ChatExerciseConsolaComandos/ServidorConsolaChat/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../ChatExerciseConsolaComandos/ServidorConsolaChat/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../ChatExerciseConsolaComandos/ServidorConsolaChat/src/main/java/com/spachecor/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../ChatExerciseConsolaComandos/ServidorConsolaChat/src/main/java/com/spachecor/client/ClientThread.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../ChatExerciseConsolaComandos/ServidorConsolaChat/src/main/java/com/spachecor/client/RequestOption.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../ChatExerciseConsolaComandos/ServidorConsolaChat/src/main/java/com/spachecor/models/Client.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../ChatExerciseConsolaComandos/ServidorConsolaChat/src/main/java/com/spachecor/server/MessageOption.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../ChatExerciseConsolaComandos/ServidorConsolaChat/src/main/java/com/spachecor/server/ServerHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../ChatExerciseConsolaComandos/ServidorConsolaChat/src/main/java/com/spachecor/server/ServerThread.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/spacrod/clientechat/client/ClientHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/spacrod/clientechat/client/ClientHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/spacrod/clientechat/client/ClientThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/spacrod/clientechat/client/ClientThread.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/spacrod/clientechat/controllers/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/spacrod/clientechat/controllers/MainController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/spacrod/clientechat/views/main-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/spacrod/clientechat/views/main-view.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ServidorChat/src/main/java/com/spacrod/servidorchat/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ServidorChat/src/main/java/com/spacrod/servidorchat/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/spacrod/clientechat/services/FXService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/spacrod/clientechat/services/FXService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../ServidorChat/src/main/java/com/spacrod/servidorchat/client/ClientThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ServidorChat/src/main/java/com/spacrod/servidorchat/client/ClientThread.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ServidorChat/src/main/java/com/spacrod/servidorchat/client/RequestOption.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ServidorChat/src/main/java/com/spacrod/servidorchat/client/RequestOption.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ServidorChat/src/main/java/com/spacrod/servidorchat/controllers/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ServidorChat/src/main/java/com/spacrod/servidorchat/controllers/MainController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../ServidorChat/src/main/java/com/spacrod/servidorchat/models/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ServidorChat/src/main/java/com/spacrod/servidorchat/models/Client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ServidorChat/src/main/java/com/spacrod/servidorchat/server/MessageOption.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ServidorChat/src/main/java/com/spacrod/servidorchat/server/MessageOption.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ServidorChat/src/main/java/com/spacrod/servidorchat/server/ServerHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ServidorChat/src/main/java/com/spacrod/servidorchat/server/ServerHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ServidorChat/src/main/java/com/spacrod/servidorchat/server/ServerThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ServidorChat/src/main/java/com/spacrod/servidorchat/server/ServerThread.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ServidorChat/src/main/resources/com/spacrod/servidorchat/views/main-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/../ServidorChat/src/main/resources/com/spacrod/servidorchat/views/main-view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ChatExerciseConsolaComandos/ClienteConsolaChat/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ChatExerciseConsolaComandos/ClienteConsolaChat/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ChatExerciseConsolaComandos/ClienteConsolaChat/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ChatExerciseConsolaComandos/ClienteConsolaChat/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ChatExerciseConsolaComandos/ClienteConsolaChat/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ChatExerciseConsolaComandos/ClienteConsolaChat/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ChatExerciseConsolaComandos/ClienteConsolaChat/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ChatExerciseConsolaComandos/ClienteConsolaChat/src/main/java/com/spachecor/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ChatExerciseConsolaComandos/ClienteConsolaChat/src/main/java/com/spachecor/client/ClientHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ChatExerciseConsolaComandos/ClienteConsolaChat/src/main/java/com/spachecor/client/ClientThread.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ChatExerciseConsolaComandos/ClienteConsolaChat/src/main/java/com/spachecor/client/MessageOption.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ChatExerciseConsolaComandos/ClienteConsolaChat/src/main/java/com/spachecor/client/RequestOption.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ChatExerciseConsolaComandos/ServidorConsolaChat/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ChatExerciseConsolaComandos/ServidorConsolaChat/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ChatExerciseConsolaComandos/ServidorConsolaChat/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ChatExerciseConsolaComandos/ServidorConsolaChat/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ChatExerciseConsolaComandos/ServidorConsolaChat/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ChatExerciseConsolaComandos/ServidorConsolaChat/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ChatExerciseConsolaComandos/ServidorConsolaChat/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ChatExerciseConsolaComandos/ServidorConsolaChat/src/main/java/com/spachecor/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ChatExerciseConsolaComandos/ServidorConsolaChat/src/main/java/com/spachecor/client/ClientThread.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ChatExerciseConsolaComandos/ServidorConsolaChat/src/main/java/com/spachecor/client/RequestOption.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ChatExerciseConsolaComandos/ServidorConsolaChat/src/main/java/com/spachecor/models/Client.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ChatExerciseConsolaComandos/ServidorConsolaChat/src/main/java/com/spachecor/server/MessageOption.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ChatExerciseConsolaComandos/ServidorConsolaChat/src/main/java/com/spachecor/server/ServerHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ChatExerciseConsolaComandos/ServidorConsolaChat/src/main/java/com/spachecor/server/ServerThread.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -144,7 +136,7 @@
       <workItem from="1734261295051" duration="6288000" />
       <workItem from="1734276261454" duration="5661000" />
       <workItem from="1734283933982" duration="3576000" />
-      <workItem from="1734308188582" duration="1906000" />
+      <workItem from="1734308188582" duration="5613000" />
     </task>
     <servers />
   </component>

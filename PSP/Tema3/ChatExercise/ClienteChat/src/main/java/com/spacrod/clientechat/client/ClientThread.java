@@ -9,8 +9,10 @@ import java.util.ArrayList;
 
 public class ClientThread implements Runnable {
     private ObjectInputStream in;
-    protected ClientThread(Socket socket) throws IOException {
+    private String name;
+    protected ClientThread(Socket socket, String name) throws IOException {
         this.in = new ObjectInputStream(socket.getInputStream());
+        this.name = name;
     }
     @Override
     public void run() {
@@ -19,8 +21,6 @@ public class ClientThread implements Runnable {
                 this.listeningMessages();
             }catch (Exception e){
                 System.out.println("Error: " + e.getMessage());
-                e.printStackTrace();
-                //break;
             }
         }
     }
@@ -33,7 +33,9 @@ public class ClientThread implements Runnable {
         if(message.getFirst().equals(MessageOption.USERS_LIST.getValue())){
             ArrayList<String> clientList = new ArrayList<>();
             for(int i = 1; i < message.size(); i++){
-                clientList.add(message.get(i));
+                if(!this.name.equals(message.get(i).split("-")[1].trim())){
+                    clientList.add(message.get(i));
+                }
             }
             MainController.updateClientList(clientList);
         }else if(message.getFirst().equals(MessageOption.MESSAGE.getValue())){

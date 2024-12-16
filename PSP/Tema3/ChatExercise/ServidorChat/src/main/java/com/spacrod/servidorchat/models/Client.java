@@ -1,21 +1,23 @@
 package com.spacrod.servidorchat.models;
 
+import java.io.IOException;
+import java.io.ObjectOutputStream;
 import java.net.Socket;
 import java.util.Objects;
 
 public class Client {
     private Integer id;
     private String name;
-    private Socket socket;
+    private ObjectOutputStream out;
     private static Integer counter;
     static {
         counter = 0;
     }
-    public Client(String name, Socket socket) {
+    public Client(String name, Socket socket) throws IOException {
         Client.counter++;
         this.id = counter;
         this.name = name;
-        this.socket = socket;
+        this.out = new ObjectOutputStream(socket.getOutputStream());
     }
 
     @Override
@@ -30,7 +32,7 @@ public class Client {
         return "Client{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
-                ", socket=" + socket +
+                ", socket=" + out +
                 '}';
     }
 
@@ -51,11 +53,11 @@ public class Client {
         this.name = name;
     }
 
-    public Socket getSocket() {
-        return socket;
+    public ObjectOutputStream getOut() {
+        return out;
     }
 
-    public void setSocket(Socket socket) {
-        this.socket = socket;
+    public void setOut(ObjectOutputStream out) {
+        this.out = out;
     }
 }

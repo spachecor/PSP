@@ -1,13 +1,9 @@
 package com.spacrod.clientechat.controllers;
 
-import com.spacrod.clientechat.client.ClientHandler;
 import com.spacrod.clientechat.services.FXService;
 import javafx.application.Platform;
 import javafx.fxml.FXML;
-import javafx.scene.control.Button;
-import javafx.scene.control.ChoiceBox;
-import javafx.scene.control.TextArea;
-import javafx.scene.control.TextField;
+import javafx.scene.control.*;
 import javafx.scene.layout.VBox;
 
 import java.io.IOException;
@@ -35,12 +31,20 @@ public class MainController {
     @FXML
     protected void onClickButtonEnviar(){
         Platform.runLater(()->{
-            String receptor = choiceBoxDestinatario.getValue().trim();
-            String[] receptorArray = receptor.split("-");
-            try {
-                FXService.getClientHandler().sendMessage(textFieldMensaje.getText(), receptorArray[0]);
-            } catch (IOException e) {
-                throw new RuntimeException(e);
+            if(this.choiceBoxDestinatario!=null && this.choiceBoxDestinatario.getValue()!=null){
+                if(!this.choiceBoxDestinatario.getValue().isEmpty()){
+                    String receptor = choiceBoxDestinatario.getValue().trim();
+                    String[] receptorArray = receptor.split("-");
+                    try {
+                        FXService.getClientHandler().sendMessage(textFieldMensaje.getText(), receptorArray);
+                    } catch (IOException e) {
+                        throw new RuntimeException(e);
+                    }
+                }else{
+                    this.showAlert("¡Nada de campos vacíos!", "Debe escoger un usuario válido. Si no hay uno, espere a que otro usuario se conecte para poder chatear con él.");
+                }
+            }else{
+                this.showAlert("¡Nada de campos vacíos!", "Debe escoger un usuario válido. Si no hay uno, espere a que otro usuario se conecte para poder chatear con él.");
             }
         });
     }
@@ -86,5 +90,12 @@ public class MainController {
                 System.err.println("Error: la ventana no está disponible.");
             }
         });
+    }
+    private void showAlert(String title, String message) {
+        Alert alert = new Alert(Alert.AlertType.WARNING);
+        alert.setTitle(title);
+        alert.setHeaderText(null);
+        alert.setContentText(message);
+        alert.showAndWait();
     }
 }

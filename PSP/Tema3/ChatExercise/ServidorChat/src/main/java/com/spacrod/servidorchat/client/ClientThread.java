@@ -62,10 +62,9 @@ public class ClientThread implements Runnable {
             ArrayList<String> mensajeParaReceptor = new ArrayList<>();
             mensajeParaReceptor.add(MessageOption.MESSAGE.getValue());
             mensajeParaReceptor.add("##### "+this.client.getId()+ " - " + this.client.getName() +" #####\n"+message.get(2));
-            ObjectOutputStream outReceptor = new ObjectOutputStream(clienteReceptor.getSocket().getOutputStream());
             System.out.println(clienteReceptor.toString());
-            outReceptor.writeObject(mensajeParaReceptor);
-            outReceptor.flush();
+            clienteReceptor.getOut().writeObject(mensajeParaReceptor);
+            clienteReceptor.getOut().flush();
             System.out.println("Line 71 ClientThread. El mensaje ha sido enviado: " + mensajeParaReceptor.toString());
         }else MainController.logMessage("No se encontró el cliente con id: "+ idReceptor);
     }
@@ -81,9 +80,8 @@ public class ClientThread implements Runnable {
             mensajeListaClientes.add(cliente.getId()+ " - " + cliente.getName());
         }
         for(Client cliente : ClientThread.getClients()){
-            ObjectOutputStream outReceptor = new ObjectOutputStream(cliente.getSocket().getOutputStream());
-            outReceptor.writeObject(mensajeListaClientes);
-            outReceptor.flush();
+            cliente.getOut().writeObject(mensajeListaClientes);
+            cliente.getOut().flush();
             System.out.println("Line 87 ClientThread se han mandado los clientes: " + mensajeListaClientes.toString());
         }
     }

@@ -26,7 +26,11 @@ public class FXService {
         FXService.fxmlLoader = new FXMLLoader(Main.class.getResource("views/"+view));
         stage.getIcons().add(new Image(Objects.requireNonNull(Main.class.getResourceAsStream("/com/spacrod/clientechat/img/icono.png"))));
         Scene scene = new Scene(fxmlLoader.load(), sizes[0], sizes[1]);
-        stage.setTitle(title);
+        if (FXService.clientHandler == null) {
+            stage.setTitle(title);
+        }else{
+            stage.setTitle(title+" - "+clientHandler.getName());
+        }
         stage.setScene(scene);
         stage.show();
     }

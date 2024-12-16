@@ -1,7 +1,8 @@
 package com.spacrod.clientechat.client;
 
+import com.spacrod.clientechat.controllers.MainController;
+
 import java.io.IOException;
-import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.net.Socket;
 import java.util.ArrayList;
@@ -40,22 +41,28 @@ public class ClientHandler {
         this.send(user);
     }
     private void listeningMessages() throws IOException {
-        Thread thread = new Thread(new ClientThread(this.socket));
+        Thread thread = new Thread(new ClientThread(this.socket, name));
         thread.start();
         System.out.println("Line 41 ClientHandler. Se genera un nuevo hilo ClientThread para gestionar la recepción de mensajes");
     }
-    public void sendMessage(String message, String idReceptor) throws IOException {
+    public void sendMessage(String message, String[] receptor) throws IOException {
+        String idReceptor = receptor[0];
         ArrayList<String> messageToSend = new ArrayList<>();
         messageToSend.add(MessageOption.MESSAGE.getValue());
         messageToSend.add(idReceptor);
         messageToSend.add(message);
         System.out.println("Line 46 ClientHandler. Se prepara el siguiente mensaje: "+message.toString());
         this.send(messageToSend);
+        MainController.logMessage("## Yo -> "+receptor[0] + " - " + receptor[1] +" ##:\n"+message);
     }
     public void sendDisconnectMessage() throws IOException {
         ArrayList<String> disconnectMessage =  new ArrayList<>();
         disconnectMessage.add(RequestOption.DISCONNECTION.getValue());
         out.writeObject(disconnectMessage);
         out.flush();
+    }
+
+    public String getName() {
+        return name;
     }
 }
