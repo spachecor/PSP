@@ -1,4 +1,4 @@
-package com.spacrod.servidorchat.client;
+package com.spachecor.client;
 
 public enum RequestOption {
     CONNECTION("0"),

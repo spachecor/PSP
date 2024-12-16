@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="052224ae-7403-4d25-997f-6f1b33cbe862" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../../ChatExercise/ClienteChat.rar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ChatExercise/ClienteChat/src/main/java/com/spacrod/clientechat/client/ClientThread.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ChatExercise/ClienteChat/src/main/java/com/spacrod/clientechat/client/MessageOption.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ClienteConsolaChat/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ClienteConsolaChat/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ClienteConsolaChat/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ClienteConsolaChat/src/main/java/com/spachecor/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ClienteConsolaChat/src/main/java/com/spachecor/client/ClientHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ClienteConsolaChat/src/main/java/com/spachecor/client/ClientThread.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ClienteConsolaChat/src/main/java/com/spachecor/client/MessageOption.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ClienteConsolaChat/src/main/java/com/spachecor/client/RequestOption.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/spachecor/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/spachecor/client/ClientThread.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/spachecor/client/RequestOption.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/spachecor/models/Client.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/spachecor/server/MessageOption.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/spachecor/server/ServerHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/spachecor/server/ServerThread.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ChatExercise/ClienteChat/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../ChatExercise/ClienteChat/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ChatExercise/ClienteChat/src/main/java/com/spacrod/clientechat/client/ClientHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../ChatExercise/ClienteChat/src/main/java/com/spacrod/clientechat/client/ClientHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ChatExercise/ClienteChat/src/main/java/com/spacrod/clientechat/controllers/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../ChatExercise/ClienteChat/src/main/java/com/spacrod/clientechat/controllers/MainController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ChatExercise/ClienteChat/src/main/resources/com/spacrod/clientechat/views/main-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/../../ChatExercise/ClienteChat/src/main/resources/com/spacrod/clientechat/views/main-view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ChatExercise/ServidorChat/src/main/java/com/spacrod/servidorchat/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../ChatExercise/ServidorChat/src/main/java/com/spacrod/servidorchat/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ChatExercise/ServidorChat/src/main/java/com/spacrod/servidorchat/client/ClientThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../ChatExercise/ServidorChat/src/main/java/com/spacrod/servidorchat/client/ClientThread.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ChatExercise/ServidorChat/src/main/java/com/spacrod/servidorchat/client/RequestOption.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../ChatExercise/ServidorChat/src/main/java/com/spacrod/servidorchat/client/RequestOption.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ChatExercise/ServidorChat/src/main/java/com/spacrod/servidorchat/controllers/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../ChatExercise/ServidorChat/src/main/java/com/spacrod/servidorchat/controllers/MainController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ChatExercise/ServidorChat/src/main/java/com/spacrod/servidorchat/models/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../ChatExercise/ServidorChat/src/main/java/com/spacrod/servidorchat/models/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ChatExercise/ServidorChat/src/main/java/com/spacrod/servidorchat/server/MessageOption.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../ChatExercise/ServidorChat/src/main/java/com/spacrod/servidorchat/server/MessageOption.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ChatExercise/ServidorChat/src/main/java/com/spacrod/servidorchat/server/ServerHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../ChatExercise/ServidorChat/src/main/java/com/spacrod/servidorchat/server/ServerHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ChatExercise/ServidorChat/src/main/java/com/spacrod/servidorchat/server/ServerThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../ChatExercise/ServidorChat/src/main/java/com/spacrod/servidorchat/server/ServerThread.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ChatExercise/ServidorChat/src/main/resources/com/spacrod/servidorchat/views/main-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/../../ChatExercise/ServidorChat/src/main/resources/com/spacrod/servidorchat/views/main-view.fxml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../.." />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 7
+}]]></component>
+  <component name="ProjectId" id="2qGgt9FA1AiqhZNBixDmA4Lxtea" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Main.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/Selene/Documents/PSP/PSP/PSP/Tema3/ChatExerciseConsolaComandos/ServidorConsolaChat/src/main/java/com/spachecor",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "Errors",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Selene\Documents\PSP\PSP\PSP\Tema3\ChatExerciseConsolaComandos\ServidorConsolaChat\src\main\java\com\spachecor" />
+      <recent name="C:\Users\Selene\Documents\PSP\PSP\PSP\Tema3\ChatExerciseConsolaComandos\ServidorConsolaChat\src\main\java\com\spachecor\server" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.spachecor.server" />
+      <recent name="com.spachecor.client" />
+    </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9f38398b9061-18abd8497189-intellij.indexing.shared.core-IU-241.14494.240" />
+        <option value="bundled-js-predefined-1d06a55b98c1-74d2a5396914-JavaScript-IU-241.14494.240" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="052224ae-7403-4d25-997f-6f1b33cbe862" name="Changes" comment="" />
+      <created>1734294538113</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1734294538113</updated>
+      <workItem from="1734294539208" duration="8612000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>

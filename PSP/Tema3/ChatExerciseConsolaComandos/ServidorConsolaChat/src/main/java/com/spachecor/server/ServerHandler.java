@@ -1,4 +1,4 @@
-package com.spacrod.servidorchat.server;
+package com.spachecor.server;
 
 import java.io.IOException;
 import java.net.ServerSocket;
@@ -12,6 +12,7 @@ public class ServerHandler {
             try {
                 Thread thread = new Thread(new ServerThread(serverSocket));
                 thread.start();
+                System.out.println("Inicializando servidor... [ok]");
             }catch (RuntimeException e){
                 throw new IOException("La conexión ha sufrido un fallo");
             }

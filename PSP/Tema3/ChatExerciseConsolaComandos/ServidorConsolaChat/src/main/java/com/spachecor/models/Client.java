@@ -1,4 +1,4 @@
-package com.spacrod.servidorchat.models;
+package com.spachecor.models;
 
 import java.net.Socket;
 import java.util.Objects;

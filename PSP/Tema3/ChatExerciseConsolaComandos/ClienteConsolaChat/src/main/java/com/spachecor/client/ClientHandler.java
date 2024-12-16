@@ -1,7 +1,6 @@
-package com.spacrod.clientechat.client;
+package com.spachecor.client;
 
 import java.io.IOException;
-import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.net.Socket;
 import java.util.ArrayList;
@@ -12,6 +11,12 @@ public class ClientHandler {
     private String name;
     private Socket socket;
     private ObjectOutputStream out;
+    public static String mensajes;
+    private static ArrayList<String> clientes;
+    static{
+        ClientHandler.mensajes = "";
+        ClientHandler.clientes = new ArrayList<>();
+    }
     public ClientHandler(String host, int port, String name) throws Exception {
         this.host = host;
         this.port = port;
@@ -21,41 +26,59 @@ public class ClientHandler {
         this.sendUser();
         this.listeningMessages();
     }
+
     private void makeConnection() throws IOException {
         this.socket = new Socket(this.host, this.port);
     }
-    public void send(ArrayList<String> message){
+    private void send(ArrayList<String> message){
         try{
             out.writeObject(message);
             out.flush();
-            System.out.println("Line 30 ClientHandler. Se envía el siguiente mensaje: "+message.toString());
-        }catch(Exception e){
-            e.printStackTrace();
+        }catch(IOException e){
+            System.err.println("No ha sido posible enviar el mensaje.\nContenido: "+message.toString()+"\nMotivo: "+e);
         }
     }
-    private void sendUser() throws IOException {
-        ArrayList<String> user =  new ArrayList<>();
+    private void sendUser(){
+        ArrayList<String> user = new ArrayList<>();
         user.add(RequestOption.CONNECTION.getValue());
         user.add(this.name);
         this.send(user);
     }
-    private void listeningMessages() throws IOException {
-        Thread thread = new Thread(new ClientThread(this.socket));
+    private void listeningMessages() {
+        Thread thread = new Thread(() -> {
+            try {
+                new ClientThread(this.socket).run();
+            } catch (IOException e) {
+                System.err.println("Error en el hilo de escucha: " + e.getMessage());
+            }
+        });
+        thread.setDaemon(true);
         thread.start();
-        System.out.println("Line 41 ClientHandler. Se genera un nuevo hilo ClientThread para gestionar la recepción de mensajes");
     }
-    public void sendMessage(String message, String idReceptor) throws IOException {
+
+
+    public void sendMessage(String message, String idReceptor){
         ArrayList<String> messageToSend = new ArrayList<>();
         messageToSend.add(MessageOption.MESSAGE.getValue());
         messageToSend.add(idReceptor);
         messageToSend.add(message);
-        System.out.println("Line 46 ClientHandler. Se prepara el siguiente mensaje: "+message.toString());
         this.send(messageToSend);
     }
-    public void sendDisconnectMessage() throws IOException {
+    public void sendDisconnectMessage(){
         ArrayList<String> disconnectMessage =  new ArrayList<>();
         disconnectMessage.add(RequestOption.DISCONNECTION.getValue());
-        out.writeObject(disconnectMessage);
-        out.flush();
+        this.send(disconnectMessage);
+        System.exit(0);
+    }
+    public static String getMensajes() {
+        return mensajes;
+    }
+
+    public static void setMensajes(String mensajes) {
+        ClientHandler.mensajes += mensajes;
+    }
+
+    public static ArrayList<String> getClientes() {
+        return clientes;
     }
 }

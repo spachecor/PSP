@@ -1,4 +1,4 @@
-package com.spacrod.servidorchat.server;
+package com.spachecor.server;
 
 public enum MessageOption {
     USERS_LIST("0"),

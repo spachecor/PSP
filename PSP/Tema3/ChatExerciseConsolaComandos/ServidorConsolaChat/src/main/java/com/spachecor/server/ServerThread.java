@@ -1,6 +1,6 @@
-package com.spacrod.servidorchat.server;
+package com.spachecor.server;
 
-import com.spacrod.servidorchat.client.ClientThread;
+import com.spachecor.client.ClientThread;
 
 import java.io.IOException;
 import java.net.ServerSocket;
