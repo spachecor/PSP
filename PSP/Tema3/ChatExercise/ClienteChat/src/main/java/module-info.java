@@ -1,6 +1,7 @@
 module com.spacrod.clientechat {
     requires javafx.controls;
     requires javafx.fxml;
+    requires java.desktop;
 
 
     opens com.spacrod.clientechat to javafx.fxml;

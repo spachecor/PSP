@@ -9,6 +9,11 @@ import javafx.scene.layout.VBox;
 import java.io.IOException;
 import java.util.ArrayList;
 
+/**
+ * Clase MainController que es el controlador de la main-view.fxml
+ * @author Selene
+ * @version 1.0
+ */
 public class MainController {
     private static MainController instance;
     @FXML
@@ -35,11 +40,8 @@ public class MainController {
                 if(!this.choiceBoxDestinatario.getValue().isEmpty()){
                     String receptor = choiceBoxDestinatario.getValue().trim();
                     String[] receptorArray = receptor.split("-");
-                    try {
-                        FXService.getClientHandler().sendMessage(textFieldMensaje.getText(), receptorArray);
-                    } catch (IOException e) {
-                        throw new RuntimeException(e);
-                    }
+                    FXService.getClientHandler().sendMessage(this.textFieldMensaje.getText(), receptorArray);
+                    this.textFieldMensaje.setText("");
                 }else{
                     this.showAlert("¡Nada de campos vacíos!", "Debe escoger un usuario válido. Si no hay uno, espere a que otro usuario se conecte para poder chatear con él.");
                 }
@@ -67,6 +69,11 @@ public class MainController {
             instance.addNewLog(log);
         }
     }
+
+    /**
+     * Función que toma la lista de usuarios disponibles dada y la actualiza en razón de la que ya había
+     * @param clients La nueva lista actualizada de usuarios disponibles
+     */
     public static void updateClientList(ArrayList<String> clients){
         Platform.runLater(() -> {
             MainController.instance.choiceBoxDestinatario.getItems().clear();
@@ -74,6 +81,11 @@ public class MainController {
             System.out.println("Line 63 MainController. Se actualizan las opciones del choicebox: "+clients.toString());
         });
     }
+
+    /**
+     * Función que gestiona el cierre del cliente. Manda el mensaje de desconexión al pulsar sobre el botón de cierre y
+     * cierra la aplicación para este cliente
+     */
     private void manageClosure(){
         //ejecuta el código después de que la escena esté completamente inicializada
         Platform.runLater(() -> {
@@ -91,11 +103,20 @@ public class MainController {
             }
         });
     }
-    private void showAlert(String title, String message) {
+
+    /**
+     * Función que muestra una alerta con los parámetros pasados
+     * @param title El título de la alerta
+     * @param message El mensaje de la alerta
+     */
+    public void showAlert(String title, String message) {
         Alert alert = new Alert(Alert.AlertType.WARNING);
         alert.setTitle(title);
         alert.setHeaderText(null);
         alert.setContentText(message);
         alert.showAndWait();
+    }
+    public static MainController getInstance() {
+        return instance;
     }
 }

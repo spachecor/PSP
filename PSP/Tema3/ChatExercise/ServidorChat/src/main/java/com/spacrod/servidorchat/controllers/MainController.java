@@ -1,13 +1,14 @@
 package com.spacrod.servidorchat.controllers;
 
-import com.spacrod.servidorchat.server.ServerHandler;
-import javafx.application.Platform;
 import javafx.fxml.FXML;
 import javafx.scene.control.TextArea;
 import javafx.scene.layout.VBox;
 
-import java.io.IOException;
-
+/**
+ * Clase MainController que es el controlador de la vista main.view.fxml
+ * @author Selene
+ * @version 1.0
+ */
 public class MainController {
     private static MainController instance;
     @FXML

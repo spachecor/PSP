@@ -6,7 +6,7 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.spacrod.servidorchat.controllers.ConfiguracionComunicacionController">
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #F3EED9;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.spacrod.servidorchat.controllers.ConfiguracionComunicacionController">
    <children>
       <HBox alignment="CENTER" prefHeight="200.0" prefWidth="400.0">
          <children>
@@ -22,13 +22,16 @@
                <children>
                   <Label text="Puerto de la conexión:">
                      <font>
-                        <Font name="Times New Roman" size="14.0" />
+                        <Font name="Times New Roman" size="18.0" />
                      </font>
                      <VBox.margin>
                         <Insets bottom="10.0" />
                      </VBox.margin>
                   </Label>
-                  <TextField fx:id="textFieldPort" promptText="Ej: 10101" />
+                  <TextField fx:id="textFieldPort" promptText="Ej: 10101">
+                     <font>
+                        <Font name="Times New Roman" size="14.0" />
+                     </font></TextField>
                </children>
             </VBox>
          </children>
@@ -41,7 +44,7 @@
                <children>
                   <Label fx:id="labelError" textFill="#a40000">
                      <font>
-                        <Font name="Times New Roman Bold" size="14.0" />
+                        <Font name="Times New Roman Bold" size="18.0" />
                      </font>
                   </Label>
                </children>
@@ -53,7 +56,7 @@
                         <Insets right="50.0" />
                      </HBox.margin>
                      <font>
-                        <Font name="Times New Roman Bold" size="14.0" />
+                        <Font name="Times New Roman Bold" size="18.0" />
                      </font>
                   </Button>
                   <Button mnemonicParsing="false" onAction="#onClickButtonCancelar" text="Cancelar">
@@ -61,7 +64,7 @@
                         <Insets left="50.0" />
                      </HBox.margin>
                      <font>
-                        <Font name="Times New Roman Bold" size="14.0" />
+                        <Font name="Times New Roman Bold" size="18.0" />
                      </font>
                   </Button>
                </children>

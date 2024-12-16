@@ -6,6 +6,12 @@ import java.io.IOException;
 import java.net.ServerSocket;
 import java.net.Socket;
 
+/**
+ * Clase ServerThread que es el hilo que se ejecuta para aceptar las peticiones. Se ejecuta un hilo para esto por conflictos
+ * con la interfaz gráfica.
+ * @author Selene
+ * @version 1.0
+ */
 public class ServerThread implements Runnable {
     private ServerSocket serverSocket;
     ServerThread(ServerSocket serverSocket){

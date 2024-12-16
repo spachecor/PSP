@@ -5,6 +5,11 @@ import java.io.ObjectOutputStream;
 import java.net.Socket;
 import java.util.Objects;
 
+/**
+ * Clase Client, que es la estructura de un cliente que se conecte
+ * @author Selene
+ * @version 1.0
+ */
 public class Client {
     private Integer id;
     private String name;

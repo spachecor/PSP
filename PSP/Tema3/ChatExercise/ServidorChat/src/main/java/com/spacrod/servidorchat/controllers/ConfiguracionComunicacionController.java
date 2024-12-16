@@ -10,6 +10,11 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
+/**
+ * Clase ConfiguracionComunicacionController que es el controlador de la vista configuracion-comunicacion.fxml
+ * @author Selene
+ * @version 1.0
+ */
 public class ConfiguracionComunicacionController {
     @FXML
     private Label labelError;
@@ -22,7 +27,7 @@ public class ConfiguracionComunicacionController {
                 contenidoTextFieldPort != null
                 && !contenidoTextFieldPort.isEmpty()
                 && containsOnlyNumbers(contenidoTextFieldPort)
-                && Integer.parseInt(contenidoTextFieldPort) >= 10000 && Integer.parseInt(contenidoTextFieldPort) <= 99999
+                && Integer.parseInt(contenidoTextFieldPort) >= 49152 && Integer.parseInt(contenidoTextFieldPort) <= 65535
         ){
             try{
                 new ServerHandler(Integer.parseInt(contenidoTextFieldPort));
@@ -36,13 +41,19 @@ public class ConfiguracionComunicacionController {
                 FXService.closeWindow(actionEvent);
             }
         }else{
-            labelError.setText("Por favor ingrese un valor valido.(10000-99999)");
+            labelError.setText("Por favor ingrese un valor valido.(49152-65535)");
         }
     }
     @FXML
     protected void onClickButtonCancelar(ActionEvent actionEvent){
         FXService.closeWindow(actionEvent);
     }
+
+    /**
+     * Funcion que comprueba que el String pasado solo contenga numeros
+     * @param input El string a comprobar
+     * @return true si contiene solo numeros o false si contiene algo que no sea un numero
+     */
     private boolean containsOnlyNumbers(String input) {
         return input != null && input.matches("\\d+");
     }

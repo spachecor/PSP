@@ -6,7 +6,7 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.spacrod.clientechat.controllers.ConfiguracionComunicacionController">
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #F3EED9;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.spacrod.clientechat.controllers.ConfiguracionComunicacionController">
    <children>
       <HBox alignment="CENTER" prefHeight="325.0" prefWidth="200.0">
          <children>
@@ -26,7 +26,7 @@
                                     <Insets left="20.0" />
                                  </HBox.margin>
                                  <font>
-                                    <Font name="Times New Roman" size="14.0" />
+                                    <Font name="Times New Roman" size="18.0" />
                                  </font>
                               </Label>
                            </children>
@@ -35,7 +35,7 @@
                            <children>
                               <TextField fx:id="textFieldHost" prefWidth="200.0" promptText="Ej: 127.0.0.1">
                                  <font>
-                                    <Font name="Times New Roman" size="13.0" />
+                                    <Font name="Times New Roman" size="14.0" />
                                  </font>
                               </TextField>
                            </children>
@@ -54,7 +54,7 @@
                                     <Insets left="20.0" />
                                  </HBox.margin>
                                  <font>
-                                    <Font name="Times New Roman" size="14.0" />
+                                    <Font name="Times New Roman" size="18.0" />
                                  </font>
                               </Label>
                            </children>
@@ -63,7 +63,7 @@
                            <children>
                               <TextField fx:id="textFieldPort" prefWidth="200.0" promptText="Ej: 10101">
                                  <font>
-                                    <Font name="Times New Roman" size="13.0" />
+                                    <Font name="Times New Roman" size="14.0" />
                                  </font>
                               </TextField>
                            </children>
@@ -82,7 +82,7 @@
                                     <Insets left="20.0" />
                                  </HBox.margin>
                                  <font>
-                                    <Font name="Times New Roman" size="14.0" />
+                                    <Font name="Times New Roman" size="18.0" />
                                  </font>
                               </Label>
                            </children>
@@ -91,7 +91,7 @@
                            <children>
                               <TextField fx:id="textFieldName" prefWidth="200.0" promptText="Ej: Juan">
                                  <font>
-                                    <Font name="Times New Roman" size="13.0" />
+                                    <Font name="Times New Roman" size="14.0" />
                                  </font>
                               </TextField>
                            </children>
@@ -112,7 +112,7 @@
          <children>
             <Button mnemonicParsing="false" onAction="#onClickButtonAceptar" text="Aceptar">
                <font>
-                  <Font name="Times New Roman Bold" size="14.0" />
+                  <Font name="Times New Roman Bold" size="18.0" />
                </font>
                <HBox.margin>
                   <Insets right="20.0" />
@@ -120,7 +120,7 @@
             </Button>
             <Button mnemonicParsing="false" onAction="#onClickButtonCancelar" text="Cancelar">
                <font>
-                  <Font name="Times New Roman Bold" size="14.0" />
+                  <Font name="Times New Roman Bold" size="18.0" />
                </font>
                <HBox.margin>
                   <Insets left="20.0" />
