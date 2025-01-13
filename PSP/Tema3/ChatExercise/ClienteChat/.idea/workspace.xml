@@ -5,31 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="eba5f3ee-159c-4b14-8bb9-101e547ab156" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../../ChatExercise.rar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/spacrod/clientechat/client/ClientHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/spacrod/clientechat/client/ClientHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/spacrod/clientechat/client/ClientThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/spacrod/clientechat/client/ClientThread.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/spacrod/clientechat/client/MessageOption.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/spacrod/clientechat/client/MessageOption.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/spacrod/clientechat/client/RequestOption.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/spacrod/clientechat/client/RequestOption.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/spacrod/clientechat/controllers/ConfiguracionComunicacionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/spacrod/clientechat/controllers/ConfiguracionComunicacionController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/spacrod/clientechat/controllers/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/spacrod/clientechat/controllers/MainController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/spacrod/clientechat/services/FXService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/spacrod/clientechat/services/FXService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/spacrod/clientechat/views/configuracion-comunicacion.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/spacrod/clientechat/views/configuracion-comunicacion.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/spacrod/clientechat/views/main-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/spacrod/clientechat/views/main-view.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ServidorChat/src/main/java/com/spacrod/servidorchat/client/ClientThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ServidorChat/src/main/java/com/spacrod/servidorchat/client/ClientThread.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ServidorChat/src/main/java/com/spacrod/servidorchat/client/RequestOption.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ServidorChat/src/main/java/com/spacrod/servidorchat/client/RequestOption.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ServidorChat/src/main/java/com/spacrod/servidorchat/controllers/ConfiguracionComunicacionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ServidorChat/src/main/java/com/spacrod/servidorchat/controllers/ConfiguracionComunicacionController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ServidorChat/src/main/java/com/spacrod/servidorchat/controllers/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ServidorChat/src/main/java/com/spacrod/servidorchat/controllers/MainController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ServidorChat/src/main/java/com/spacrod/servidorchat/models/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ServidorChat/src/main/java/com/spacrod/servidorchat/models/Client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ServidorChat/src/main/java/com/spacrod/servidorchat/server/MessageOption.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ServidorChat/src/main/java/com/spacrod/servidorchat/server/MessageOption.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ServidorChat/src/main/java/com/spacrod/servidorchat/server/ServerHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ServidorChat/src/main/java/com/spacrod/servidorchat/server/ServerHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ServidorChat/src/main/java/com/spacrod/servidorchat/server/ServerThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ServidorChat/src/main/java/com/spacrod/servidorchat/server/ServerThread.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ServidorChat/src/main/java/com/spacrod/servidorchat/services/FXService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ServidorChat/src/main/java/com/spacrod/servidorchat/services/FXService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ServidorChat/src/main/java/com/spacrod/servidorchat/services/FontService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ServidorChat/src/main/resources/com/spacrod/servidorchat/fonts/AustieBostYouWearFlowersSolid.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ServidorChat/src/main/resources/com/spacrod/servidorchat/views/configuracion-comunicacion.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/../ServidorChat/src/main/resources/com/spacrod/servidorchat/views/configuracion-comunicacion.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ServidorChat/src/main/resources/com/spacrod/servidorchat/views/main-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/../ServidorChat/src/main/resources/com/spacrod/servidorchat/views/main-view.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,13 +52,13 @@
     "git-widget-placeholder": "master",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/Selene/Documents/PSP/PSP/Tema3/ChatExercise/ClienteChat/src/main/resources/com/spacrod/clientechat",
+    "last_opened_file_path": "C:/Users/Selene/Documents/AAD/Tema3/EjercicioFinalSGECN",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "Errors",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -130,7 +106,9 @@
       <workItem from="1734276261454" duration="5661000" />
       <workItem from="1734283933982" duration="3576000" />
       <workItem from="1734308188582" duration="5613000" />
-      <workItem from="1734335009440" duration="5068000" />
+      <workItem from="1734335009440" duration="5481000" />
+      <workItem from="1734338020170" duration="1092000" />
+      <workItem from="1736329045364" duration="93000" />
     </task>
     <servers />
   </component>
