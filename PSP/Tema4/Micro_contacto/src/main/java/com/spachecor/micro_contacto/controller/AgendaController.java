@@ -22,6 +22,11 @@ public class AgendaController {
         return this.agendaServiceImpl.recuperarContacto(email);
     }
 
+    @GetMapping(produces = MediaType.APPLICATION_JSON_VALUE)
+    public List<Contacto> getContactos() {
+        return this.agendaServiceImpl.devolverContactos();
+    }
+
     @PostMapping(value = "contacto", consumes = MediaType.APPLICATION_JSON_VALUE)
     public void postAgenda(@RequestBody Contacto contacto) {
         this.agendaServiceImpl.agregarContacto(contacto);
