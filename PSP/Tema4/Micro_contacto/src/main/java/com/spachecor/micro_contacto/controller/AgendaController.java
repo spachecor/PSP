@@ -3,7 +3,10 @@ package com.spachecor.micro_contacto.controller;
 import com.spachecor.micro_contacto.model.Contacto;
 import com.spachecor.micro_contacto.service.AgendaServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpHeaders;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -17,15 +20,25 @@ public class AgendaController {
         this.agendaServiceImpl = agendaServiceImpl;
     }
 
-    @GetMapping(value = "contacto", produces = MediaType.APPLICATION_JSON_VALUE)
-    public Contacto getAgenda(@RequestParam String email) {
-        return this.agendaServiceImpl.recuperarContacto(email);
-    }
+    // Metodo para recuperar todos los contactos
+    @GetMapping(produces=MediaType.APPLICATION_JSON_VALUE)
+    public ResponseEntity<List<Contacto>> recuperarContactos() {
+        // Llamada al servicio para obtener la lista de contactos
+        List<Contacto> contactos = agendaServiceImpl.devolverContactos();
 
-    @GetMapping(produces = MediaType.APPLICATION_JSON_VALUE)
+        // Creación de un objeto HttpHeaders para añadir encabezados personalizados
+        HttpHeaders headers = new HttpHeaders();
+
+        // Añadir un encabezado con el número total de contactos
+        headers.add("total", String.valueOf(contactos.size()));
+        System.out.println(headers.get("total"));
+        // Devolver una respuesta HTTP con la lista de contactos, los encabezados y un estado HTTP 200 (OK)
+        return new ResponseEntity<>(contactos, headers, HttpStatus.OK);
+    }
+    /*@GetMapping(produces = MediaType.APPLICATION_JSON_VALUE)
     public List<Contacto> getContactos() {
         return this.agendaServiceImpl.devolverContactos();
-    }
+    }*/
 
     @PostMapping(value = "contacto", consumes = MediaType.APPLICATION_JSON_VALUE)
     public void postAgenda(@RequestBody Contacto contacto) {

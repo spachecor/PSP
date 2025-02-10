@@ -37,7 +37,7 @@ public class ClienteContactosController {
         Persona persona = new Persona(nombre,email,edad);
         CompletableFuture<List<Persona>> personaCompletableFuture = accesoService.llamadaServicio(persona);
         for(int i=1;i<50;i++) {
-            System.out.println("esperando ");
+            System.out.println("esperando "+i);
             try {
                 Thread.sleep(50);
             } catch (InterruptedException e) {
