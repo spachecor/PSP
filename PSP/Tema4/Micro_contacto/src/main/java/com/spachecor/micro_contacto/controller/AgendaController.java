@@ -49,12 +49,12 @@ public class AgendaController {
         return this.agendaServiceImpl.devolverContactos();
     }*/
 
-    @PostMapping(value = "contactos/contacto", consumes = MediaType.APPLICATION_JSON_VALUE)
+    @PostMapping(value = "contactos", consumes = MediaType.APPLICATION_JSON_VALUE)
     public void postAgenda(@RequestBody Contacto contacto) {
         this.agendaServiceImpl.agregarContacto(contacto);
     }
 
-    @PutMapping(value = "contactos/contacto", consumes = MediaType.APPLICATION_JSON_VALUE)
+    @PutMapping(value = "contactos", consumes = MediaType.APPLICATION_JSON_VALUE)
     public void putAgenda(@RequestBody Contacto contacto) {
         if(contacto.getId()!=null)this.agendaServiceImpl.actualizarContacto(contacto);
         else{
@@ -65,7 +65,7 @@ public class AgendaController {
         }
     }
 
-    @DeleteMapping(value = "contactos/contacto", consumes = MediaType.APPLICATION_JSON_VALUE)
+    @DeleteMapping(value = "contactos", consumes = MediaType.APPLICATION_JSON_VALUE)
     public void deleteAgenda(@RequestBody Contacto contacto) {
         this.agendaServiceImpl.eliminarContacto(contacto.getEmail());
     }
