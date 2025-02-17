@@ -3,9 +3,9 @@ spring:
     name: eureka-server
 server:
   port: 8761
-  enableSelfPreservation: true  # Habilita el modo de auto-preservacion
-  renewalPercentThreshold: 0.85  # Reduce el umbral del 85% (default) a 75%
-  evictionIntervalTimerInMs: 60000  # Cada 60s, Eureka verifica instancias no renovadas
+  enableSelfPreservation: true  # Auto-preservación activada
+  renewalPercentThreshold: 0.70  # Umbral de renovacion a 70%
+  evictionIntervalTimerInMs: 60000  # Verificación cada 60s
 
 eureka:
   client:
